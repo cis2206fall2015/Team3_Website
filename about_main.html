@@ -52,53 +52,77 @@
 		<!-- /.container -->
 	</nav>
   
-<!--	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-head">
-				<a href="about_main.html" class="navbar-brand">Navbar Example</a>
-        		 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
-					<span class="sr-only">Navigation toggle</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="hamburger-navigation">
-				<div class="navbar-text navbar-right">
-					<a class="navbar-link" href="URL here">Follow us!</a>
-				</div>
-				<ul class="nav navbar-nav" role="menu">
-					<li><a href="#" class="active">Current Page</a><span class="sr-only">current</span></li>
-					<li><a href="#">Link</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" role="button" data-toggle="dropdown">Dropdown<span class="caret" /></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Option one</a></li>
-							<li><a href="#">Option two</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav> -->
-
-  
+<!-- ----------------- CONTENT --------------->
+ 
+	<!-- Page title (jumbotron) --> 
 	<div class="jumbotron" style="padding-top:70px"> <!-- Padding added because of navbar overlap -->
 		<div class="container">
 			<h1 class="text-center">The Team</h1>
 			<p>Maybe something can go here. I don't really know...</p>
 		</div>
 	</div>
-	
+
+	<!-- Name and Picture container -->	
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<img class="img-circle center-block img-responsive" src="content/me.jpg" alt="Name" height="270px" width="270px">
-			</div>
 			<div class="col-xs-12">
 				<div class="container-fluid">
 					<h4 class="text-center">Brett Burley-Inners</h4>
 				</div>
+			</div>
+			<div class="col-xs-12">
+				<img style="border: 5px solid #ECF0F1" class="img-circle center-block img-responsive" src="content/photos/me.jpg" alt="Name" height="270px" width="270px">
+			</div>
+		</div>
+	</div>
+
+	<!-- collapsible panels for bio and resume -->
+	<div style="padding-top: 15px" class="container"> <!-- padding added because picture too close -->
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default"> <!-- bio panel -->
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<div class="row">
+							<div class="col-xs-6">
+								<h5>Biography</h5>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a data-toggle="collapse" data-parent="#accordion" href="#bio"><span class="glyphicon glyphicon-chevron-down text-right"></span></a>
+							</div>
+						</div>
+					</h4> <!-- /.panel-title -->
+				</div> <!-- /.panel-heading -->
+				<div id="bio" class="panel-collapse collapse in">
+					<div class="panel-body">
+						I grew up in a small town in the middle of Pennsylvania. I graduated from Penn College in 2013. I am currently attending Mansfield University for Computer Science. My hobbies include playing guitar, being a nerd, listening to music, vidya, and drinking excessive amounts of coffee.
+					</div>
+				</div>
+			</div> <!-- /.panel-default (bio panel) -->
+			<div class="panel panel-default"> <!-- resume panel -->
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<div class="row">
+							<div class="col-xs-6">
+								<h5>Resume</h5>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a data-toggle="collapse" data-parent="#accordion" href="#bio"><span class="glyphicon glyphicon-chevron-down text-right"></span></a>
+							</div>
+						</div>
+					</h4>
+				</div>
+				<div id="resume" class="panel-collapse collapse">
+					<div class="panel-body">
+						<img class="center-block img-responsive" src="content/resume_images/resume1.jpg" alt="Brett Burley-Inners' resume">
+					</div>
+					<div class="panel-footer">
+						<h5 class="text-center"> PDF Download: <a href="content/resume_pdfs/bbi_resume.pdf" download="BBI_Resume"><span class="glyphicon glyphicon-download"></span></a></h5>	
+					</div>
+				</div>
+			</div> <!-- ./panel-default (resume panel) -->
+		</div> <!-- ./panel-group -->
+	</div> <!-- END BIO AND RESUME PANEL DIV -->
+
 				<div class="col-xs-12">
 					<p>I grew up in a small town and decided I'd go do the college thing. I graduated from Penn College in 2013 and am currently attending Mansfield for Computer Science. Hobbies include playing guitar, being a nerd, listening to music, and drinking excessive amounts of coffee.
 					</p>
